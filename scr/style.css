@@ -700,3 +700,126 @@ body {
         height: 250px;
     }
 }
+
+
+/* ===== ИСПРАВЛЕНИЯ ДЛЯ СЧЕТЧИКА ПАССАЖИРОВ ===== */
+.hero-trip-options__item--number-of-travelers img:first-child {
+    width: 28px;
+    height: 28px;
+    flex-shrink: 0;
+}
+
+/* ===== ФОН ДЛЯ ФУТЕРА ===== */
+.site-footer {
+    background: #2c3e50;
+    color: white;
+    margin-top: 4rem;
+}
+
+/* ===== СЕКЦИЯ - общие стили ===== */
+.section {
+    padding: 4rem 0;
+}
+
+/* ===== УЛУЧШЕНИЯ ДЛЯ FAQ ===== */
+.faq-section__container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* ===== Кнопки радио (были input type=radio, теперь button) ===== */
+.hero-trip-options__bullet {
+    appearance: none;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 3px solid #e1e8ed;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.hero-trip-options__bullet:checked {
+    background: #3498db;
+    border-color: #3498db;
+}
+
+.hero-trip-options__bullet--active {
+    background: #3498db !important;
+    border-color: #3498db !important;
+}
+
+/* ===== Иконки календаря в date inputs ===== */
+.hero-signup-form__date-inputs-wrapper {
+    position: relative;
+}
+
+.hero-signup-form__input--date {
+    padding-right: 3rem;
+}
+
+.date-icon {
+    position: absolute;
+    right: 1.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    opacity: 0.6;
+}
+
+/* ===== УЛУЧШЕНИЯ ПОДВАЛА ===== */
+.site-footer__container {
+    background: #34495e;
+    border-radius: 24px 24px 0 0;
+    margin: 0 2rem;
+}
+
+.footer-nav {
+    display: flex;
+    gap: 3rem;
+}
+
+.footer-nav-list li {
+    margin-bottom: 0.5rem;
+}
+
+/* ===== МОБИЛЬНЫЕ ИСПРАВЛЕНИЯ ===== */
+@media (max-width: 768px) {
+    .hero-trip-options__item--number-of-travelers {
+        justify-content: center;
+        gap: 0.75rem;
+    }
+    
+    .hero-trip-options__decrease,
+    .hero-trip-options__increase {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .footer-nav {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    .contacts {
+        margin: 0 1rem 3rem;
+        padding: 3rem 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-trip-options {
+        padding: 1.5rem;
+    }
+    
+    .hero-trip-options__item {
+        flex-wrap: wrap;
+        gap: 0.75rem;
+        justify-content: center;
+    }
+    
+    .site-footer__container {
+        margin: 0 1rem;
+        padding: 3rem 1.5rem 2rem;
+    }
+}
