@@ -1,219 +1,380 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Базовые мета-теги для корректного отображения -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wonders App</title>
+    <meta name="title" content="Wonders | Skip the Climbing, Catch the Bus">
+    <meta name="description" content="Билеты на автобусы в Альпы! Лучшие виды без лишних усилий. Панорамные окна, комфорт и горы за окном.">
+    
+    <!-- Подключаю свой CSS файл -->
     <link rel="stylesheet" href="./scr/style.css">
+    
+    <!-- Лого сайта -->
+    <link rel="icon" href="./scr/img/site-logo.svg" type="image/svg+xml">
+    
+    <title>Wonders - Билеты на вершину</title>
 </head>
 <body>
-    <!-- Делаю нулевую секцию : шапку с лого и меню -->
-    <header>
-        <nav>
-            <ul>
-                <li>Wonders</li>
-                <li>Mobile App</li>
-                <li>FAQs</li>
-                <li>Contact</li>
-                <li>Sign Up</li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Делаю главную часть страницы -->
-    <main>
-        <!-- Делаю первую секцию : два блока (поиск билетов и картинка) -->
-        <section>
-            <!-- Левый блок с поиском -->
-            <div class="main-left-container">
-                <h1>Skip the Climbing,<br/>Catch the Bus</h1>
-                <h2>We sell tickets to the best seats in the house – houses on wheels, that is! Get ready for jaw-dropping views without breaking a sweat.</h2>
-
-                <!-- Блок с 2 радио и счётчиком пассажиров -->
-                <div>
-                    <p><input type="radio" value="Round trip" id="" name="radio">Round trip</p>
-                    <p><input type="radio" value="One Way" id="" name="radio">One Way</p>
-
-                    <!-- Счётчик пассажиров -->
-                    <div>
-                        <img src="#" alt="person">
-                        <button>-</button>
-                        <span>1</span>
-                        <button>+</button>
-                    </div>
-                </div>
-
-                <!-- Блок Откуда/Куда -->
-                <div>
-                    <label for="departure">Departure</label>
-                    <input type="text" id="departure" placeholder="Your City/Station">
-                    <label for="arrival">Arrival</label>
-                    <input type="text" id="arrival" placeholder="Where to?">
-                </div>
-
-                <!-- Блок Когда-туда/Когда-обратно -->
-                <div>
-                    <label for="when">Pick your lucky day</label>
-                    <input type="date" id="when">
-                    <input type="date" id="when-back">
-                </div>
-
-                <!-- Блок с кнопкой сабмит -->
-                <div>
-                    <button>Find My Alpine Ride</button>
-                </div>
-
-            </div>
-            <!-- Правый блок с картинкой -->
-            <div class="main-right-container">
-                <img src="#" alt="Beauty Mountain">
-            </div>
-        </section>
-
-        <!-- Секция Показатели -->
-        <section>
-            <div>
-                <div>
-                    <h3>68k+</h3>
-                    <p>Photos Taken</p>
-                </div>
-                <div>
-                    <h3>1.4M+</h3>
-                    <p>Daily trains</p>
-                </div>
-                <div>
-                    <h3>23M+</h3>
-                    <p>Altitude Gained</p>
-                </div>
-                <div>
-                    <h3>165+</h3>
-                    <p>Years of history</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Секция с красивыми картинками -->
-        <section>
-            <div>
-                <h2>Glimpses of Glory</h2>
-            </div>
-
-            <!-- 2 блока с картинками -->
-            <div>
-                <!-- Первые картинки -->
-                <div>
-                    <img src="#" alt="1 mountain">
-                    <img src="#" alt="2 mountain">
-                </div>
-
-                <!-- Вторые картинки -->
-                <div>
-                    <div>
-                        <img src="#" alt="3 mountain">
-                        <img src="#" alt="4 mountain">
-                    </div>
-                    <div>
-                        <img src="#" alt="5 mountain">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Секция Скачать приложение -->
-        <section>
-            <div>
-                <h3>Free downloads app now!</h3>
-                <div>
-                    <a href="#">
-                        <img src="#" alt="1 link">
-                    </a>
-                    <a href="#">
-                        <img src="#" alt="2 link">
-                    </a>
-                    <a href="#">
-                        <img src="#" alt="3 link">
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Секция Вопросы-Ответы -->
-        <section>
-            <h3>FAQs.</h3>
-            <ul>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-                <li>4</li>
-                <li>5</li>
-                <li>6</li>
-                <li>7</li>
-            </ul>
-        </section>
-
-        <!-- Секция Контакты -->
-        <section>
-            <div>
-                <div>
-                    <h3>Contact us</h3>
-                </div>
-                <div>
-                    <p>+41 98765 43210</p>
-                    <p>hello@peakpasses.eu</p>
-                </div>
-                <div>
-                    <p>Alpenblick Strasse 7,</p>
-                    <p>12345 Edelweiss Town, Alps</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Подвал -->
-        <footer>
-            <div>
-                <div>
-                    <img src="#" alt="footer-logo">
-                    <h4>Wonders</h4>
-                </div>
-                <div>
-                    <div>
-                        <h5>About</h5>
-                        <ul>
-                            <li>1</li>
-                            <li>2</li>
-                            <li>3</li>
-                            <li>4</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h5>Community</h5>
-                        <ul>
-                            <li>1</li>
-                            <li>2</li>
-                            <li>3</li>
-                            <li>4</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h5>Socials</h5>
-                        <ul>
-                            <li>1</li>
-                            <li>2</li>
-                            <li>3</li>
-                            <li>4</li>
-                        </ul>
+    <!-- Обертка для всей разметки -->
+    <div class="site-layout">
+        <div class="site-layout__main">
+            
+            <!-- МОДАЛЬНОЕ МЕНЮ для мобильной версии (скрыто по умолчанию) -->
+            <div id="modal-menu" class="modal-menu">
+                <div class="container modal-menu__container">
+                    <div id="modal-close" class="modal-menu__close"></div>
+                    <div class="modal-menu-list">
+                        <a href="#apps" class="modal-menu-list__link">Mobile App</a>
+                        <a href="#faq" class="modal-menu-list__link">FAQs</a>
+                        <a href="#contacts" class="modal-menu-list__link">Contact</a>
+                        <a href="#hero" class="modal-menu-list__link">Sign Up</a>
                     </div>
                 </div>
             </div>
 
-            <div>
-                <p>English: © 2026 Peak Passages.</p>
-                <p>All Rights Reserved (Especially the Window Seats).</p>
+            <!-- ШАПКА САЙТА с логотипом, навигацией и бургер-меню -->
+            <header id="site-header" class="section site-header">
+                <div class="container site-header__container">
+                    <!-- Логотип компании -->
+                    <div class="header-logo">
+                        <img src="./scr/img/site-logo.svg" alt="Wonders Logo" loading="lazy">
+                    </div>
+                    
+                    <!-- Основная навигация (скрывается на мобильных) -->
+                    <nav class="header-nav">
+                        <a href="#apps" class="header-nav__link">Mobile App</a>
+                        <a href="#faq" class="header-nav__link">FAQs</a>
+                        <a href="#contacts" class="header-nav__link">Contact</a>
+                        <a href="#hero" class="header-nav__link header-nav__link--bold">Sign Up</a>
+                    </nav>
+                    
+                    <!-- БУРГЕР-МЕНЮ для мобильных устройств -->
+                    <div id="header-burger" class="header-burger-menu">
+                        <img src="./scr/img/burger-menu.svg" alt="Открыть меню" loading="lazy">
+                    </div>
+                </div>
+            </header>
+
+            <!-- ОСНОВНОЙ КОНТЕНТ -->
+            <div class="site-layout__content">
+                
+                <!-- ГЕРОЙ-СЕКЦИЯ: форма поиска + главная картинка -->
+                <section id="hero" class="section hero-section">
+                    <div class="container hero-section__container">
+                        <!-- Левая часть - информация и форма -->
+                        <div class="hero-main">
+                            <div class="hero-info">
+                                <!-- Главный заголовок -->
+                                <h1 class="section-title hero-title">Skip the Climbing,<br/>Catch the Bus</h1>
+                                <!-- Подзаголовок с описанием -->
+                                <div class="hero-desc">
+                                    We sell tickets to the best seats in the house – houses on wheels, that is! 
+                                    Get ready for jaw-dropping views without breaking a sweat.
+                                </div>
+                            </div>
+                            
+                            <!-- ИНТЕРАКТИВНАЯ ФОРМА ПОИСКА -->
+                            <div class="hero-interactive">
+                                
+                                <!-- Блок выбора типа поездки и счетчика пассажиров -->
+                                <div class="hero-trip-options">
+                                    <!-- Радиокнопка "Туда-обратно" -->
+                                    <div class="hero-trip-options__item hero-trip-options__item--round-trip">
+                                        <input type="radio" id="hero-round-trip-btn" name="trip-type" data-value="Round trip" class="button hero-trip-options__bullet hero-trip-options__bullet--active">
+                                        <label for="hero-round-trip-btn" class="hero-trip-options__label">Round trip</label>
+                                    </div>
+                                    
+                                    <!-- Радиокнопка "В один конец" -->
+                                    <div class="hero-trip-options__item hero-trip-options__item--one-way">
+                                        <input type="radio" id="hero-one-way-btn" name="trip-type" data-value="One Way" class="button hero-trip-options__bullet">
+                                        <label for="hero-one-way-btn" class="hero-trip-options__label">One Way</label>
+                                    </div>
+                                    
+                                    <!-- СЧЕТЧИК ПАССАЖИРОВ -->
+                                    <div class="hero-trip-options__item hero-trip-options__item--number-of-travelers">
+                                        <img src="./scr/img/person.svg" alt="Иконка человека" loading="lazy">
+                                        <button id="hero-decrease-btn" type="button" class="button hero-trip-options__decrease">
+                                            <img src="./scr/img/icon-minus.svg" alt="Уменьшить" loading="lazy">
+                                        </button>
+                                        <span id="hero-travelers-input" class="hero-trip-options__travelers-amount">1</span>
+                                        <button id="hero-increase-btn" type="button" class="button hero-trip-options__increase">
+                                            <img src="./scr/img/icon-plus.svg" alt="Увеличить" loading="lazy">
+                                        </button>
+                                    </div>
+                                </div>
+                                
+                                <!-- ФОРМА ПОИСКА БИЛЕТОВ -->
+                                <form class="hero-signup-form" id="search-form">
+                                    <!-- Откуда -->
+                                    <div class="hero-signup-form__group">
+                                        <label for="departure-station-input" class="hero-signup-form__label">Departure</label>
+                                        <input id="departure-station-input" class="hero-signup-form__input" type="text" placeholder="Your City/Station" autocomplete="off">
+                                        <div id="departure-station-list" class="autocomplete-station-list"></div>
+                                    </div>
+                                    
+                                    <!-- Куда -->
+                                    <div class="hero-signup-form__group">
+                                        <label for="arrival-station-input" class="hero-signup-form__label">Arrival</label>
+                                        <input id="arrival-station-input" class="hero-signup-form__input" type="text" placeholder="Where to?" autocomplete="off">
+                                        <div id="arrival-station-list" class="autocomplete-station-list"></div>
+                                    </div>
+                                    
+                                    <!-- Даты поездки -->
+                                    <div class="hero-signup-form__group">
+                                        <label class="hero-signup-form__label">Pick your lucky day</label>
+                                        <div class="hero-signup-form__date-inputs-wrapper">
+                                            <input id="departure-date-input" class="hero-signup-form__input hero-signup-form__input--date" type="date">
+                                            <img src="./scr/img/icon-calendar.svg" alt="Календарь" class="date-icon" loading="lazy">
+                                            <input id="return-date-input" class="hero-signup-form__input hero-signup-form__input--date" type="date">
+                                            <img src="./scr/img/icon-calendar.svg" alt="Календарь" class="date-icon" loading="lazy">
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Кнопка поиска -->
+                                    <div class="hero-signup-form__c2a">
+                                        <button id="signup-btn" type="submit" class="button button--c2a button--disabled">Find My Alpine Ride</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        
+                        <!-- ПРАВАЯ ЧАСТЬ - главная иллюстрация -->
+                        <div class="hero-illustration">
+                            <img class="hero-illustration__img" src="./scr/img/hero/hero-image.png" alt="Горы и автобус" loading="lazy">
+                        </div>
+                    </div>
+                </section>
+
+                <!-- СЕКЦИЯ СТАТИСТИКИ -->
+                <section class="section fact-section">
+                    <div class="container fact-section__container">
+                        <div class="facts">
+                            <div class="facts__item">
+                                <div class="facts__label">68k+</div>
+                                <div class="facts__desc">Photos Taken</div>
+                            </div>
+                            <div class="facts__item">
+                                <div class="facts__label">1.4M+</div>
+                                <div class="facts__desc">Daily trains</div>
+                            </div>
+                            <div class="facts__item">
+                                <div class="facts__label">23M+</div>
+                                <div class="facts__desc">Altitude Gained</div>
+                            </div>
+                            <div class="facts__item">
+                                <div class="facts__label">165+</div>
+                                <div class="facts__desc">Years of history</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ГАЛЕРЕЯ КАРТИНОК -->
+                <section id="gallery" class="section gallery-section">
+                    <div class="container gallery-section__container">
+                        <h2 class="section-title gallery-title">Glimpses of Glory</h2>
+                        <div class="gallery-content">
+                            <!-- Левая колонка галереи -->
+                            <div class="gallery-content__left">
+                                <div class="gallery-content__item gallery-content__item--first">
+                                    <picture>
+                                        <source media="(max-width: 768px)" srcset="./scr/img/gallery/picture-1-mobile.jpg">
+                                        <img src="./scr/img/gallery/picture-1.jpg" alt="Гора 1" loading="lazy">
+                                    </picture>
+                                </div>
+                                <div class="gallery-content__item gallery-content__item--second">
+                                    <picture>
+                                        <source media="(max-width: 768px)" srcset="./scr/img/gallery/picture-2-mobile.jpg">
+                                        <img src="./scr/img/gallery/picture-2.jpg" alt="Гора 2" loading="lazy">
+                                    </picture>
+                                </div>
+                            </div>
+                            
+                            <!-- Правая колонка галереи -->
+                            <div class="gallery-content__right">
+                                <div class="gallery-content__item gallery-content__item--third">
+                                    <picture>
+                                        <source media="(max-width: 768px)" srcset="./scr/img/gallery/picture-3-mobile.jpg">
+                                        <img src="./scr/img/gallery/picture-3.jpg" alt="Гора 3" loading="lazy">
+                                    </picture>
+                                </div>
+                                <div class="gallery-content__item gallery-content__item--fourth">
+                                    <picture>
+                                        <source media="(max-width: 768px)" srcset="./scr/img/gallery/picture-4-mobile.jpg">
+                                        <img src="./scr/img/gallery/picture-4.jpg" alt="Гора 4" loading="lazy">
+                                    </picture>
+                                </div>
+                                <div class="gallery-content__item gallery-content__item--fifth">
+                                    <picture>
+                                        <source media="(max-width: 768px)" srcset="./scr/img/gallery/picture-5-mobile.jpg">
+                                        <img src="./scr/img/gallery/picture-5.jpg" alt="Гора 5" loading="lazy">
+                                    </picture>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- СЕКЦИЯ СКАЧАТЬ ПРИЛОЖЕНИЕ -->
+                <section id="apps" class="section app-download-section">
+                    <div class="container app-download-section__container">
+                        <h3 class="section-title app-download-title">Free downloads app now!</h3>
+                        <div class="app-list">
+                            <!-- Google Play -->
+                            <div class="app-list__item">
+                                <a href="https://play.google.com/" class="app-list__link" target="_blank" rel="noopener">
+                                    <picture>
+                                        <source media="(max-width: 768px)" srcset="./scr/img/apps/google-play-mobile.png">
+                                        <img class="app-list__image" src="./scr/img/apps/google-play.png" alt="Google Play" loading="lazy">
+                                    </picture>
+                                </a>
+                            </div>
+                            
+                            <!-- Huawei App Gallery -->
+                            <div class="app-list__item">
+                                <a href="https://consumer.huawei.com/" class="app-list__link" target="_blank" rel="noopener">
+                                    <picture>
+                                        <source media="(max-width: 768px)" srcset="./scr/img/apps/huawei-app-gallery-mobile.png">
+                                        <img class="app-list__image" src="./scr/img/apps/huawei-app-gallery.png" alt="Huawei AppGallery" loading="lazy">
+                                    </picture>
+                                </a>
+                            </div>
+                            
+                            <!-- App Store -->
+                            <div class="app-list__item">
+                                <a href="https://www.apple.com/app-store/" class="app-list__link" target="_blank" rel="noopener">
+                                    <picture>
+                                        <source media="(max-width: 768px)" srcset="./scr/img/apps/app-store-mobile.png">
+                                        <img class="app-list__image" src="./scr/img/apps/app-store.png" alt="App Store" loading="lazy">
+                                    </picture>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- СЕКЦИЯ ВОПРОСЫ-ОТВЕТЫ (FAQ) -->
+                <section id="faq" class="section faq-section">
+                    <div class="container faq-section__container">
+                        <h3 class="section-title faq-title">FAQs.</h3>
+                        <div class="faq-list">
+                            <article class="faq-item">
+                                <div class="faq-item__head">Alpine Bus Journeys?</div>
+                                <div class="faq-item__content">
+                                    Forget crowded cities! Alpine Bus Journeys are your comfy seat with panoramic windows
+                                    to breathtaking mountain vistas, charming villages, and air so fresh it might
+                                    make you yodel (please don't, unless you're outside).
+                                </div>
+                            </article>
+                            <article class="faq-item">
+                                <div class="faq-item__head">What about seating options?</div>
+                                <div class="faq-item__content">
+                                    Comfy standard seats with great views! All offer a front-row seat to the greatest show on Earth – the Alps!
+                                </div>
+                            </article>
+                            <article class="faq-item">
+                                <div class="faq-item__head">What is the Alpine Wallet?</div>
+                                <div class="faq-item__content">
+                                    Digital wallet for smooth ticket booking. Load it up and travel faster than downhill!
+                                </div>
+                            </article>
+                            <article class="faq-item">
+                                <div class="faq-item__head">My Altitude Score?</div>
+                                <div class="faq-item__content">
+                                    Loyalty points for mountain road cruising! Priority boarding + bragging rights.
+                                </div>
+                            </article>
+                            <article class="faq-item">
+                                <div class="faq-item__head">Why a Bus Station Fee?</div>
+                                <div class="faq-item__content">
+                                    Small fee for clean stations and mountain air. Sometimes covers rogue bicycles.
+                                </div>
+                            </article>
+                            <article class="faq-item">
+                                <div class="faq-item__head">Why are buses late?</div>
+                                <div class="faq-item__content">
+                                    Weather, sheep, photo stops, or tractors. Welcome to Mountain Road Time!
+                                </div>
+                            </article>
+                            <article class="faq-item">
+                                <div class="faq-item__head">Peak Season Surcharge?</div>
+                                <div class="faq-item__content">
+                                    Extra for sharing views with new friends. Guarantees vibrant journey!
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </section>
             </div>
 
-        </footer>
+            <!-- ФУТЕР -->
+            <footer class="section site-footer">
+                <!-- Блок контактов -->
+                <div id="contacts" class="contacts">
+                    <div class="contacts-title">Contact us</div>
+                    <div class="contacts-info">
+                        <div class="contacts-digital">
+                            <div class="contacts-digital__telephone">+41 98765 43210</div>
+                            <div class="contacts-digital__email">hello@peakpasses.eu</div>
+                        </div>
+                        <div class="contacts-address">
+                            Alpenblick Strasse 7,<br/>
+                            12345 Edelweiss Town, Alps
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Основной футер -->
+                <div class="container site-footer__container">
+                    <!-- Логотип в футере -->
+                    <div class="footer-logo">
+                        <img src="./scr/img/site-logo-full.svg" alt="Wonders Full Logo" loading="lazy">
+                        <h4>Wonders</h4>
+                    </div>
+                    
+                    <!-- Навигация футера -->
+                    <div class="footer-nav">
+                        <div class="footer-nav__container">
+                            <h5 class="footer-nav-title">About</h5>
+                            <ul class="footer-nav-list">
+                                <li><a href="#">How it works</a></li>
+                                <li><a href="#">Featured</a></li>
+                                <li><a href="#">Partnership</a></li>
+                                <li><a href="#">Bussiness Relation</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-nav__container">
+                            <h5 class="footer-nav-title">Community</h5>
+                            <ul class="footer-nav-list">
+                                <li><a href="#">Events</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Podcast</a></li>
+                                <li><a href="#">Invite a friend</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-nav__container">
+                            <h5 class="footer-nav-title">Socials</h5>
+                            <ul class="footer-nav-list">
+                                <li><a href="#">Discord</a></li>
+                                <li><a href="#">Instagram</a></li>
+                                <li><a href="#">X (Twitter)</a></li>
+                                <li><a href="#">Facebook</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Копирайт -->
+                    <div class="footer-copyright">
+                        <p>English: © 2026 Peak Passages.</p>
+                        <p>All Rights Reserved (Especially the Window Seats).</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
 
-    </main>
-    
+    <!-- Подключаю JS для интерактивности (счетчик, бургер, автокомплит) -->
+    <script src="./scr/main.js" defer></script>
 </body>
 </html>
