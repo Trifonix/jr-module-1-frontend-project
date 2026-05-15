@@ -319,3 +319,26 @@ document.addEventListener("DOMContentLoaded", function () {
     firstItem.classList.add("faq-item--open");
   }
 });
+
+// Бургер-меню
+document.addEventListener('DOMContentLoaded', () => {
+  const burger = document.getElementById('header-burger');
+  const modalMenu = document.getElementById('modal-menu');
+  const closeBtn = document.getElementById('modal-close');
+
+  if (!burger || !modalMenu || !closeBtn) return;
+
+  burger.addEventListener('click', () => {
+    modalMenu.classList.add('active');
+  });
+
+  closeBtn.addEventListener('click', () => {
+    modalMenu.classList.remove('active');
+  });
+
+  modalMenu.addEventListener('click', (e) => {
+    if (e.target === modalMenu) {
+      modalMenu.classList.remove('active');
+    }
+  });
+});

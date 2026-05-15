@@ -116,15 +116,18 @@ body {
 }
 
 .modal-menu__close {
-    position: absolute;
-    top: 2rem;
-    right: 2rem;
-    width: 40px;
-    height: 40px;
-    background: url('./scr/img/burger-menu.svg') no-repeat center;
-    background-size: 20px;
-    cursor: pointer;
-    filter: invert(1);
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  width: 44px;
+  height: 44px;
+  border: none;
+  background: transparent;
+  color: #fff;
+  font-size: 2.2rem;
+  line-height: 1;
+  cursor: pointer;
+  z-index: 1001;
 }
 
 .modal-menu-list {
