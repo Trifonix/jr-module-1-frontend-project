@@ -520,9 +520,17 @@ body {
 }
 
 .faq-item__content {
-    padding: 0 2rem 2rem;
-    color: #5a6c7d;
-    line-height: 1.7;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+}
+
+.faq-item--open .faq-item__content {
+  max-height: 200px; /* подбираешь под себя */
+  opacity: 1;
+  padding: 1em;
+  background-color: lightcyan;
 }
 
 /* ===== КОНТАКТЫ + ФУТЕР ===== */
